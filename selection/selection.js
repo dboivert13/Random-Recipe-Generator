@@ -24,4 +24,9 @@ $(document).ready(function () {
     console.log(vegetable[i]);
     filter(vegetable[i], "vegetable");
   }
+
+  for (var i = 0; i < carbohydrates.length; i++) {
+    console.log(carbohydrates[i]);
+    filter(carbohydrates[i], "carbohydrates");
+  }
 });

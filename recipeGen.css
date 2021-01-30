@@ -7,12 +7,12 @@
     background-color: grey;
     text-align: center;
     margin: 10px;
-};
+}
 
 .is-active {
     color: black;
     
-};        
+}
 
 button {
     color: olivedrab;
@@ -34,17 +34,18 @@ button {
     display: inline-block;
     margin: 2%;
     align-content: center;
+    overflow: scroll;
 }
 
 #recipe {
     display: inline-block;
     margin: 5%;
-};
+}
 
 .text {
     background-color: gray;
     text-align: center;
-};
+}
 
 footer {
     margin: 0%;
