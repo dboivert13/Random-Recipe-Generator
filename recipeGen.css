@@ -1,8 +1,3 @@
-
-.burbon {
-    background-attachment: 
-}
-
 #title {
     background-color: grey;
     text-align: center;
@@ -10,14 +5,16 @@
 }
 
 .is-active {
-    color: black;
-    
+    color: black;   
 }
 
-button {
-    color: olivedrab;
-    background-color: olivedrab;
+.ingredient {
+    margin: 0 auto;
+}
+
+.button {
     align-content: center;
+    margin: 10px;
 }
 
 .callout {
@@ -35,6 +32,7 @@ button {
     margin: 2%;
     align-content: center;
     overflow: scroll;
+    text-align: center;
 }
 
 #recipe {
