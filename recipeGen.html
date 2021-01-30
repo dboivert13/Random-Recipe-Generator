@@ -19,11 +19,10 @@
 </head>
 
 <!-- Nav Bar (food or drink) -->
-<div class="mustard">
   <header>
     <ul class="menu">
       <li class="is-active"><a>Food</a></li>
-      <li><a href="drinkGen.html">Drink</a></li>
+      <li class="is-active"><a href="drinkGen.html">Saved Recipies</a></li>
     </ul>
   </header>
 
@@ -31,11 +30,12 @@
 
   <body id="main">
     <div id="title" class="callout secondary">
-      <h1>Food Generator</h1>
+      <h1><strong>Food Generator</strong></h1>
     </div>
 
     <!-- Ingredient Selection -->
 
+    <div class="center">
     <div class="card ingredient" style="height: 300px; width: 300px;">
       <div class="card-divider">Protein</div>
       <div class="card-section" id="protein"></div>
@@ -50,11 +50,12 @@
       <div class="card-divider">Vegetables</div>
       <div class="card-section" id="vegetable"></div>
     </div>
+  </div>
 
     <!-- Selected/Saved Ingredients -->
 
     <div class="callout">
-      <h3>Selected Ingredients</h3>
+      <h3><strong>Selected Ingredients</strong></h3>
 
       <button type="button" class="button" data-toggle="offCanvas" id="recipe-generator">Generate Recipe</button>
     </div>
@@ -63,7 +64,7 @@
 
 
     <!-- Saved Recipes -->
-
+    <div class="center">
     <div class="grid-container">
       <div class="grid-x grid-margin-x small-up-2 medium-up-3">
         <div class="cell">
@@ -95,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+    <div>
       <div class="cell">
         <div class="card" id="card-four">
           <div class="card-section">
@@ -115,7 +116,7 @@
         </div>
       </div>
     </div>
-</div class="mustard">
+  </div>
 
 <!-- Compressed JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"

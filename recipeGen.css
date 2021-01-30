@@ -4,8 +4,16 @@
     margin: 10px;
 }
 
+header {
+    background-color: grey;
+}
 .is-active {
     color: black;   
+}
+
+.center {
+    text-align: center;
+
 }
 
 .ingredient {
@@ -48,4 +56,6 @@
 footer {
     margin: 0%;
 }
+
+
 
