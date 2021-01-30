@@ -1,146 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Generator</title>
-    <!-- Compressed CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-<link rel="stylesheet" href="recipeGen.css">
 
-<script
-type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-></script>
-<style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Generator</title>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="recipeGen.css">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
     body {
-        background-image: url('https://www.heart.org/-/media/images/healthy-living/healthy-eating/superfoods.png');
+      background-image: url('https://www.heart.org/-/media/images/healthy-living/healthy-eating/superfoods.png');
     }
-</style>
+  </style>
 </head>
 
 <!-- Nav Bar (food or drink) -->
 <div class="mustard">
-<header>
+  <header>
     <ul class="menu">
-        <li class="is-active"><a>Food</a></li>
-        <li><a href="drinkGen.html">Drink</a></li>
-      </ul>
-</header>
+      <li class="is-active"><a>Food</a></li>
+      <li><a href="drinkGen.html">Drink</a></li>
+    </ul>
+  </header>
 
-<!-- Main Content  -->
-<body id="main">
+  <!-- Main Content  -->
+
+  <body id="main">
     <div id="title" class="callout secondary">
-        <h1>Food Generator</h1>
-      </div>
+      <h1>Food Generator</h1>
+    </div>
 
-   <!-- Ingredient Selection -->
+    <!-- Ingredient Selection -->
 
-    <div class="card" style="height: 300px; width: 300px;">
-        <div class="card-divider">Protein</div>
-        <div class="card-section" id="protein"></div>
-      </div>
+    <div class="card ingredient" style="height: 300px; width: 300px;">
+      <div class="card-divider">Protein</div>
+      <div class="card-section" id="protein"></div>
+    </div>
 
-      <div class="card" style="height: 300px; width: 300px;">
-        <div class="card-divider">Carbohydrates </div>
-        <div class="card-section" id="carbohydrates"></div>
-      </div>
+    <div class="card ingredient" style="height: 300px; width: 300px;">
+      <div class="card-divider">Carbohydrates </div>
+      <div class="card-section" id="carbohydrates"></div>
+    </div>
 
-      <div class="card" style="height: 300px; width: 300px;">
-        <div class="card-divider">Vegetables</div>
-        <div class="card-section" id="vegetable"></div>
-      </div>
+    <div class="card ingredient" style="height: 300px; width: 300px;">
+      <div class="card-divider">Vegetables</div>
+      <div class="card-section" id="vegetable"></div>
+    </div>
 
-      <div class="card" style="height: 300px; width: 300px;">
-        <div class="card-divider">Additional Ingredients</div>
-        <div class="card-section" id=""></div>
-      </div>
+    <!-- Selected/Saved Ingredients -->
+
+    <div class="callout">
+      <h3>Selected Ingredients</h3>
+
+      <button type="button" class="button" data-toggle="offCanvas" id="recipe-generator">Generate Recipe</button>
+    </div>
 
 
-       <!-- Selected/Saved Ingredients -->
 
-       <div class="callout">
-        <h3>Selected Ingredients</h3>
-        
-        <button type="button" class="button" data-toggle="offCanvas">Generate Recipe</button>
-      </div>
 
-        
-     
+    <!-- Saved Recipes -->
 
- <!-- Saved Recipes -->
-
- <div class="grid-container">
-  <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-    <div class="cell">
-      <div class="card">
-        <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-        <div class="card-section">
-        <h4>Recipe #1</h4>
-          <p>Nutritional Information</p>
-          <button type="button" class="button" data-toggle="offCanvas">Save</button>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+        <div class="cell">
+          <div class="card" id="card-one">
+            <div class="card-section">
+              <h4 id="recipe-one-title">Recipe #1</h4>
+              <p>Nutritional Information</p>
+              <button type="button" class="button" data-toggle="offCanvas">Save</button>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card" id="card-two">
+            <div class="card-section">
+              <h4 id="recipe-two-title">Recipe #2</h4>
+              <p>Nutritional Information</p>
+              <button type="button" class="button" data-toggle="offCanvas">Save</button>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card" id="card-three">
+            <div class="card-section">
+              <h4 id="recipe-three-title">Recipe #3</h4>
+              <p>Nutritional Information</p>
+              <button type="button" class="button" data-toggle="offCanvas">Save</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="cell">
-      <div class="card">
-        <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-        <div class="card-section">
-          <h4>Recipe #2</h4>
-          <p>Nutritional Information</p>
-          <button type="button" class="button" data-toggle="offCanvas">Save</button>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+      <div class="cell">
+        <div class="card" id="card-four">
+          <div class="card-section">
+            <h4 id="recipe-four-title">Recipe #4</h4>
+            <p>Nutritional Information</p>
+            <button type="button" class="button" data-toggle="offCanvas">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card" id="card-five">
+          <div class="card-section">
+            <h4 id="recipe-five-title">Recipe #5</h4>
+            <p>Nutritional Information</p>
+            <button type="button" class="button" data-toggle="offCanvas">Save</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="cell">
-      <div class="card">
-        <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-        <div class="card-section">
-          <h4>Recipe #3</h4>
-          <p>Nutritional Information</p>
-          <button type="button" class="button" data-toggle="offCanvas">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="grid-x grid-margin-x small-up-2 medium-up-3">
-  <div class="cell">
-    <div class="card">
-      <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-      <div class="card-section">
-        <h4>Recipe #4</h4>
-        <p>Nutritional Information</p>
-        <button type="button" class="button" data-toggle="offCanvas">Save</button>
-      </div>
-    </div>
-  </div>
-  <div class="cell">
-    <div class="card">
-      <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-      <div class="card-section">
-        <h4>Recipe #5</h4>
-        <p>Nutritional Information</p>
-        <button type="button" class="button" data-toggle="offCanvas">Save</button>
-      </div>
-    </div>
-  </div>
-  <div class="cell">
-    <div class="card">
-      <img src="assets/img/generic/rectangle-1.jpg" alt="meal photo">
-      <div class="card-section">
-        <h4>Recipe #6</h4>
-        <p>Nutritional Information</p>
-        <button type="button" class="button" data-toggle="offCanvas">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
 </div class="mustard">
 
-    <!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-<script src="selection/food_choices.js"></script>
-<script src="selection/selection.js"></script>
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+<script src="./selection/food_choices.js"></script>
+<script src="./selection/selection.js"></script>
+<script src="./selection/generator.js"></script>
 </body>
+
 </html>
