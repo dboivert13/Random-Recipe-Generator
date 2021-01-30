@@ -1,0 +1,53 @@
+
+.burbon {
+    background-attachment: 
+}
+
+#title {
+    background-color: grey;
+    text-align: center;
+    margin: 10px;
+}
+
+.is-active {
+    color: black;
+    
+}
+
+button {
+    color: olivedrab;
+    background-color: olivedrab;
+    align-content: center;
+}
+
+.callout {
+    text-align: center;
+    background-color: gray;
+    margin: 10px;
+}
+
+.row {
+    inline-size: auto;
+}
+
+.card {
+    display: inline-block;
+    margin: 2%;
+    align-content: center;
+    overflow: scroll;
+}
+
+#recipe {
+    display: inline-block;
+    margin: 5%;
+}
+
+.text {
+    background-color: gray;
+    text-align: center;
+}
+
+footer {
+    margin: 0%;
+}
+
