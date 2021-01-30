@@ -63,17 +63,6 @@ $(document).ready(function() {
             $("#card-four").append(titleFourHold, recFourImg, saveButton4);
             $("#card-five").append(titleFiveHold, recFiveImg, saveButton5);
         })
-
-        // var recipeID = 1102655;
-        // var insQueryUrl = "https://api.spoonacular.com/recipes/" + recipeID + "/analyzedInstructions?apiKey=3e0395ef2fb74075b196de6f147bf058"
-
-        // $.ajax({
-        //     url: insQueryUrl,
-        //     method: "GET"
-        // }).then(function(res) {
-        //     console.log(res);
-        // })
-
     })
 
 
