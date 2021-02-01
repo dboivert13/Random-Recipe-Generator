@@ -12,21 +12,45 @@
 type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
 ></script>
+<style>
+    body {
+      background-image: url('https://www.heart.org/-/media/images/healthy-living/healthy-eating/superfoods.png');
+    }
+  </style>
 </head>
 
 <!-- Nav Bar (food or drink) -->
 <div class="burbon">
 <header>
     <ul class="menu">
-        <li class="is-active"><a href="recipeGen.html">Food</a></li>
-        <li class="is-active"><a>Drink</a></li>
+        <li><a href="recipeGen.html" style="color: black;">Food</a></li>
+        <li class="is-active"><a style="color: black;">Saved Recipes</a></li>
       </ul>
 </header>
 
 <!-- Main Content  -->
 <body id="main">
     <div id="title" class="callout secondary">
-        <h3>Saved Recipes</h3>
+        <h1><strong>Recipe Generator</strong></h1>
+      </div>
+
+
+       <!-- Saved Recipes -->
+
+      <div class="callout secondary" style="width:500px; height: 400px;">
+        <ol>
+            <h5>Saved Recipes</h5>
+            <li></li>
+            <br>
+            <li></li>
+            <br>
+            <li></li>
+            <br>
+            <li></li>
+            <br>
+            <li></li>
+            <br>
+        </ol>
       </div>
 
  
@@ -34,21 +58,25 @@ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
 
        <!-- Selected/Saved Ingredients -->
 
-       <div>
-        <h3>Near by Grocery Stores</h3>
+       <div class="store" style="width: 500px; height: 500px; padding: 1%;">
+        <h5>Near by Grocery Stores:</h5>
         <input type="text" placeholder="zipcode">
         
         <button type="button" class="button" data-toggle="offCanvas">Search</button>
+
+        <ul>
+          <li></li>
+          <br>
+          <li></li>
+          <br>
+          <li></li>
+          <br>
+          <li></li>
+          <br>
+          <li></li>
+          <br>
+      </ul>
       </div>
-
-        
-     
-
- <!-- Saved Recipes -->
-
-
-
-
 
 
     <!-- Compressed JavaScript -->

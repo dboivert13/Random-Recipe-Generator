@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Generator</title>
+    <!-- Compressed CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="recipeGen.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Generator</title>
-  <!-- Compressed CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-  <link rel="stylesheet" href="recipeGen.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <style>
+      body {
+        background-image: url("https://www.heart.org/-/media/images/healthy-living/healthy-eating/superfoods.png");
+      }
+    </style>
+  </head>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <style>
-    body {
-      background-image: url('https://www.heart.org/-/media/images/healthy-living/healthy-eating/superfoods.png');
-    }
-  </style>
-</head>
-
-<!-- Nav Bar (food or drink) -->
+  <!-- Nav Bar (food or drink) -->
   <header>
     <ul class="menu">
-      <li class="is-active"><a>Food</a></li>
-      <li class="is-active"><a href="drinkGen.html">Saved Recipies</a></li>
+      <li class="is-active"><a style="color: black;">Food</a></li>
+      <li><a href="drinkGen.html" style="color: black;">Saved Recipes</a></li>
     </ul>
   </header>
 
@@ -30,100 +36,116 @@
 
   <body id="main">
     <div id="title" class="callout secondary">
-      <h1><strong>Food Generator</strong></h1>
+      <h1><strong>Recipe Generator</strong></h1>
     </div>
 
     <!-- Ingredient Selection -->
 
     <div class="center">
-    <div class="card ingredient" style="height: 300px; width: 300px;">
-      <div class="card-divider">Protein</div>
-      <div class="card-section" id="protein"></div>
-    </div>
+      <div class="card ingredient" style="height: 300px; width: 300px">
+        <div class="card-divider">Protein</div>
+        <div class="card-section" id="protein"></div>
+      </div>
 
-    <div class="card ingredient" style="height: 300px; width: 300px;">
-      <div class="card-divider">Carbohydrates </div>
-      <div class="card-section" id="carbohydrates"></div>
-    </div>
+      <div class="card ingredient" style="height: 300px; width: 300px">
+        <div class="card-divider">Carbohydrates</div>
+        <div class="card-section" id="carbohydrates"></div>
+      </div>
 
-    <div class="card ingredient" style="height: 300px; width: 300px;">
-      <div class="card-divider">Vegetables</div>
-      <div class="card-section" id="vegetable"></div>
+      <div class="card ingredient" style="height: 300px; width: 300px">
+        <div class="card-divider">Vegetables</div>
+        <div class="card-section" id="vegetable"></div>
+      </div>
     </div>
-  </div>
 
     <!-- Selected/Saved Ingredients -->
 
     <div class="callout">
       <h3><strong>Selected Ingredients</strong></h3>
 
-      <button type="button" class="button" data-toggle="offCanvas" id="recipe-generator">Generate Recipe</button>
+      <button
+        type="button"
+        class="button"
+        data-toggle="offCanvas"
+        id="recipe-generator"
+      >
+        Generate Recipe
+      </button>
     </div>
-
-
-
 
     <!-- Saved Recipes -->
     <div class="center">
-    <div class="grid-container">
-      <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+          <div class="cell">
+            <div class="card" id="card-one">
+              <div class="card-section">
+                <h4 id="recipe-one-title">Recipe #1</h4>
+                <p>Nutritional Information</p>
+                <button type="button" class="button" data-toggle="offCanvas">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="card-two">
+              <div class="card-section">
+                <h4 id="recipe-two-title">Recipe #2</h4>
+                <p>Nutritional Information</p>
+                <button type="button" class="button" data-toggle="offCanvas">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card" id="card-three">
+              <div class="card-section">
+                <h4 id="recipe-three-title">Recipe #3</h4>
+                <p>Nutritional Information</p>
+                <button type="button" class="button" data-toggle="offCanvas">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
         <div class="cell">
-          <div class="card" id="card-one">
+          <div class="card" id="card-four">
             <div class="card-section">
-              <h4 id="recipe-one-title">Recipe #1</h4>
+              <h4 id="recipe-four-title">Recipe #4</h4>
               <p>Nutritional Information</p>
-              <button type="button" class="button" data-toggle="offCanvas">Save</button>
+              <button type="button" class="button" data-toggle="offCanvas">
+                Save
+              </button>
             </div>
           </div>
         </div>
         <div class="cell">
-          <div class="card" id="card-two">
+          <div class="card" id="card-five">
             <div class="card-section">
-              <h4 id="recipe-two-title">Recipe #2</h4>
+              <h4 id="recipe-five-title">Recipe #5</h4>
               <p>Nutritional Information</p>
-              <button type="button" class="button" data-toggle="offCanvas">Save</button>
-            </div>
-          </div>
-        </div>
-        <div class="cell">
-          <div class="card" id="card-three">
-            <div class="card-section">
-              <h4 id="recipe-three-title">Recipe #3</h4>
-              <p>Nutritional Information</p>
-              <button type="button" class="button" data-toggle="offCanvas">Save</button>
+              <button type="button" class="button" data-toggle="offCanvas">
+                Save
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>
-      <div class="cell">
-        <div class="card" id="card-four">
-          <div class="card-section">
-            <h4 id="recipe-four-title">Recipe #4</h4>
-            <p>Nutritional Information</p>
-            <button type="button" class="button" data-toggle="offCanvas">Save</button>
-          </div>
-        </div>
-      </div>
-      <div class="cell">
-        <div class="card" id="card-five">
-          <div class="card-section">
-            <h4 id="recipe-five-title">Recipe #5</h4>
-            <p>Nutritional Information</p>
-            <button type="button" class="button" data-toggle="offCanvas">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-<!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-<script src="./selection/food_choices.js"></script>
-<script src="./selection/selection.js"></script>
-<script src="./selection/generator.js"></script>
-</body>
-
+    <!-- Compressed JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./selection/food_choices.js"></script>
+    <script src="./selection/selection.js"></script>
+    <!-- <script src="./selection/generator.js"></script> -->
+  </body>
 </html>
