@@ -16,9 +16,6 @@ header {
 
 }
 
-.ingredient {
-    margin: 0 auto;
-}
 
 .button {
     align-content: center;
@@ -28,11 +25,8 @@ header {
 .callout {
     text-align: center;
     background-color: gray;
-    margin: 10px;
-}
-
-.row {
-    inline-size: auto;
+    margin: 30px;
+    
 }
 
 .card {
@@ -53,9 +47,11 @@ header {
     text-align: center;
 }
 
-footer {
-    margin: 0%;
-}
 
+.store {
+margin: 30px;
+background-color: gainsboro;
+align-items: center;
+}
 
 
