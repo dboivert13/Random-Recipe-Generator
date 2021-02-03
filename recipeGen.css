@@ -52,6 +52,14 @@ header {
 margin: 30px;
 background-color: gainsboro;
 align-items: center;
+float: right;   
+margin-right: 20%;
+}
+
+#savedRec {
+    float: left;
+    margin-left: 20%;
+    overflow: scroll;
 }
 
 
