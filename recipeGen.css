@@ -2,6 +2,8 @@
     background-color: grey;
     text-align: center;
     margin: 10px;
+    width: 500px;
+    margin-left: 35%;
 }
 
 header {
