@@ -34,4 +34,19 @@ $(document).ready(function() {
     }
 
     $("#grocery-search").click(findGrocery);
+
+    function setHome() {
+        var homeAddress = $("#user-location").val();
+        localStorage.setItem("home-address", JSON.stringify(homeAddress));
+        $("#user-location").val(""); 
+    }
+
+    $("#set-home").click(setHome);
+
+    function homeSearch() {
+        $("#user-location").val(JSON.parse(localStorage.getItem("home-address")));
+        findGrocery();
+    }
+
+    $("#use-home").click(homeSearch);
 })
