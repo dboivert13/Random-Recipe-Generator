@@ -76,7 +76,68 @@ $(document).ready(function () {
       url: url,
       method: "GET",
     }).then(function (res) {
-      console.log(res);
+      var hit = res.hits[0];
+      console.log(hit);
+      var container = $("<div>").attr("class", "grid-container");
+      var grid = $("<div>").attr(
+        "class",
+        "grid-x grid-margin-x small-up-2 medium-up-3"
+      );
+      for (var i = 0; i < 5; i++) {
+        var hit = res.hits[i];
+        var title_text = hit.recipe.label;
+        var image_text = hit.recipe.image;
+        var url_text = hit.recipe.url;
+
+        var recipe = [title_text, image_text, url_text];
+
+        var cell = $("<div>").attr("class", "cell");
+        var card = $("<div>").attr("class", "card");
+        var title = $("<h3>").text(title_text);
+        var img = $("<img>").attr("src", image_text);
+        var save_btn = $("<button>").text("Save Recipe");
+        save_btn.attr("class", "button");
+        save_btn.attr("type", "button");
+        save_btn.attr("value", recipe);
+        card.append(title, img, save_btn);
+        cell.append(card);
+        grid.append(cell);
+
+        save_btn.click(function () {
+          var recipe = $(this).attr("value");
+          var recipe_array = recipe.split(",");
+          save_recipe_list(recipe_array);
+          console.log(recipe_array[0]);
+        });
+      }
+
+      container.append(grid);
+      $("#generate").append(container);
     });
+  }
+
+  function save_recipe_list(recipe) {
+    localStorage.setItem(recipe[0], recipe);
+
+    render_save_list();
+  }
+  render_save_list();
+  function render_save_list() {
+    for (var i in localStorage) {
+      if (localStorage.hasOwnProperty(i)) {
+        var array = localStorage.getItem(i).split(",");
+        var list = $("<li>");
+
+        var list_div = $("<div>");
+        var list_text = $("<p>").text(array[0]);
+        var list_img = $("<img>").attr("src", array[1]);
+        var list_url = $("<a>").attr("href", array[2]);
+        list_url.text(array[2]);
+
+        list_div.append(list_text, list_img, list_url);
+        list.append(list_div);
+        $("#save_list").append(list);
+      }
+    }
   }
 });

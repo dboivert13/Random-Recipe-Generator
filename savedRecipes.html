@@ -29,36 +29,35 @@
 
   <body id="main">
     <div id="title" class="callout secondary">
-      <h1><strong>Recipe Generator</strong></h1>
-    </div>
+        <h1><strong>Recipe Generator</strong></h1>
+      </div>
 
 
-    <!-- Saved Recipes -->
+       <!-- Saved Recipes -->
 
-    <div id="savedRec" class="callout secondary" style="width:500px; height: 400px;">
-      <ol>
+      <div class="callout secondary" style="width:500px; height: 400px;">
         <h5>Saved Recipes</h5>
+        <ol id="save_list">
+        </ol>
+      </div>
 
-    </div>
+ 
 
 
-
-
-    <!-- Selected/Saved Ingredients -->
-
-    <div class="store" style="width: 500px; height: 500px; padding: 1%;">
-      <h5>Near by Grocery Stores:</h5>
-      <input type="text" id="user-location" placeholder="Enter Address/Zipcode">
-
-      <button type="button" class="button" data-toggle="offCanvas" id="grocery-search">Search</button>
-      <button type="button" class="button" data-toggle="offCanvas" id="set-home">Set Home Address</button>
-      <button type="button" class="button" data-toggle="offCanvas" id="use-home">Use Home Address</button>
-
-      <p id="search-result-label" style="font-weight: bold;"></p>
-
-      <ul id="nearest-stores">
-      </ul>
-    </div>
+       <!-- Selected/Saved Ingredients -->
+       <div class="store" style="width: 500px; height: 500px; padding: 1%;">
+        <h5>Near by Grocery Stores:</h5>
+        <input type="text" id="user-location" placeholder="Enter Address/Zipcode">
+  
+        <button type="button" class="button" data-toggle="offCanvas" id="grocery-search">Search</button>
+        <button type="button" class="button" data-toggle="offCanvas" id="set-home">Set Home Address</button>
+        <button type="button" class="button" data-toggle="offCanvas" id="use-home">Use Home Address</button>
+  
+        <p id="search-result-label" style="font-weight: bold;"></p>
+  
+        <ul id="nearest-stores">
+        </ul>
+      </div>
 
 
     <!-- Compressed JavaScript -->
