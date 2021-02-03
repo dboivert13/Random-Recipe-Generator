@@ -27,8 +27,10 @@
   <!-- Nav Bar (food or drink) -->
   <header>
     <ul class="menu">
-      <li class="is-active"><a style="color: black;">Food</a></li>
-      <li><a href="savedRecipes.html" style="color: black;">Saved Recipes</a></li>
+      <li class="is-active"><a style="color: black">Food</a></li>
+      <li>
+        <a href="savedRecipes.html" style="color: black">Saved Recipes</a>
+      </li>
     </ul>
   </header>
 
@@ -42,7 +44,7 @@
     <!-- Ingredient Selection -->
 
     <div class="center">
-        <div class="card ingredient" style="height: 300px; width: 300px">
+      <div class="card ingredient" style="height: 300px; width: 300px">
         <div class="card-divider">Protein</div>
         <div class="card-section" id="protein"></div>
       </div>
@@ -67,14 +69,15 @@
         type="button"
         class="button"
         data-toggle="offCanvas"
-        id="recipe-generator">
+        id="recipe-generator"
+      >
         Generate Recipe
       </button>
     </div>
 
     <!-- Saved Recipes -->
     <div class="center" id="generate">
-    <!-- <div class="grid-container">
+      <!-- <div class="grid-container">
       <div class="grid-x grid-margin-x small-up-2 medium-up-3">
         <div class="cell">
           <div class="card" id="card-one">
@@ -131,14 +134,16 @@
         </div>
       </div>
     </div> -->
-  </div>
+    </div>
 
-<!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-<script src="./selection/food_choices.js"></script>
-<script src="./selection/selection.js"></script>
-<script src="./selection/generator.js"></script>
-</body>
-
+    <!-- Compressed JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./selection/food_choices.js"></script>
+    <script src="./selection/selection.js"></script>
+    <script src="./selection/generator.js"></script>
+  </body>
 </html>
