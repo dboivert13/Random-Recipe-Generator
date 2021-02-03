@@ -124,7 +124,10 @@ $(document).ready(function () {
   render_save_list();
   function render_save_list() {
     for (var i in localStorage) {
-      if (localStorage.hasOwnProperty(i)) {
+      if (
+        localStorage.hasOwnProperty(i) &&
+        localStorage.key(i) != "home-address"
+      ) {
         var array = localStorage.getItem(i).split(",");
         var list = $("<li>");
 

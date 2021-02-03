@@ -1,65 +1,63 @@
 #title {
-    background-color: grey;
-    text-align: center;
-    margin: 10px;
+  background-color: grey;
+  text-align: center;
+  margin: 10px;
 }
 
 header {
-    background-color: grey;
+  background-color: grey;
 }
 .is-active {
-    color: black;   
+  color: black;
 }
 
 .center {
-    text-align: center;
-
+  text-align: center;
 }
 
-
 .button {
-    align-content: center;
-    margin: 10px;
+  align-content: center;
+  margin: 10px;
 }
 
 .callout {
-    text-align: center;
-    background-color: gray;
-    margin: 30px;
-    
+  text-align: center;
+  background-color: gray;
+  margin: 30px;
 }
 
 .card {
-    display: inline-block;
-    margin: 2%;
-    align-content: center;
-    overflow: scroll;
-    text-align: center;
+  display: inline-block;
+  margin: 2%;
+  align-content: center;
+  /* overflow: scroll; */
+  text-align: center;
+}
+
+.scroll {
+  overflow: scroll;
 }
 
 #recipe {
-    display: inline-block;
-    margin: 5%;
+  display: inline-block;
+  margin: 5%;
 }
 
 .text {
-    background-color: gray;
-    text-align: center;
+  background-color: gray;
+  text-align: center;
 }
 
-
 .store {
-margin: 30px;
-background-color: gainsboro;
-align-items: center;
-float: right;   
-margin-right: 20%;
+  margin: 30px;
+  background-color: gainsboro;
+  align-items: center;
+  float: right;
+  margin-right: 20%;
 }
 
 #savedRec {
-    float: left;
-    margin-left: 20%;
-    overflow: scroll;
+  float: left;
+  margin-left: 20%;
+  overflow: scroll;
 }
-
-
