@@ -28,7 +28,7 @@
   <header>
     <ul class="menu">
       <li class="is-active"><a style="color: black;">Food</a></li>
-      <li><a href="drinkGen.html" style="color: black;">Saved Recipes</a></li>
+      <li><a href="savedRecipes.html" style="color: black;">Saved Recipes</a></li>
     </ul>
   </header>
 
@@ -42,7 +42,7 @@
     <!-- Ingredient Selection -->
 
     <div class="center">
-      <div class="card ingredient" style="height: 300px; width: 300px">
+        <div class="card ingredient" style="height: 300px; width: 300px">
         <div class="card-divider">Protein</div>
         <div class="card-section" id="protein"></div>
       </div>
@@ -61,53 +61,27 @@
     <!-- Selected/Saved Ingredients -->
 
     <div class="callout">
-      <h3><strong>Selected Ingredients</strong></h3>
+      <!-- <h3><strong>Selected Ingredients</strong></h3> -->
 
       <button
         type="button"
         class="button"
         data-toggle="offCanvas"
-        id="recipe-generator"
-      >
+        id="recipe-generator">
         Generate Recipe
       </button>
     </div>
 
     <!-- Saved Recipes -->
-    <div class="center">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-          <div class="cell">
-            <div class="card" id="card-one">
-              <div class="card-section">
-                <h4 id="recipe-one-title">Recipe #1</h4>
-                <p>Nutritional Information</p>
-                <button type="button" class="button" data-toggle="offCanvas">
-                  Save
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cell">
-            <div class="card" id="card-two">
-              <div class="card-section">
-                <h4 id="recipe-two-title">Recipe #2</h4>
-                <p>Nutritional Information</p>
-                <button type="button" class="button" data-toggle="offCanvas">
-                  Save
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cell">
-            <div class="card" id="card-three">
-              <div class="card-section">
-                <h4 id="recipe-three-title">Recipe #3</h4>
-                <p>Nutritional Information</p>
-                <button type="button" class="button" data-toggle="offCanvas">
-                  Save
-                </button>
-              </div>
+    <div class="center" id="generate">
+    <!-- <div class="grid-container">
+      <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+        <div class="cell">
+          <div class="card" id="card-one">
+            <div class="card-section">
+              <h4 id="recipe-one-title">Recipe #1</h4>
+              <p>Nutritional Information</p>
+              <button type="button" class="button" data-toggle="offCanvas">Save</button>
             </div>
           </div>
         </div>
@@ -137,15 +111,34 @@
         </div>
       </div>
     </div>
+    <div>
+      <div class="cell">
+        <div class="card" id="card-four">
+          <div class="card-section">
+            <h4 id="recipe-four-title">Recipe #4</h4>
+            <p>Nutritional Information</p>
+            <button type="button" class="button" data-toggle="offCanvas">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="card" id="card-five">
+          <div class="card-section">
+            <h4 id="recipe-five-title">Recipe #5</h4>
+            <p>Nutritional Information</p>
+            <button type="button" class="button" data-toggle="offCanvas">Save</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
 
-    <!-- Compressed JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./selection/food_choices.js"></script>
-    <script src="./selection/selection.js"></script>
-    <!-- <script src="./selection/generator.js"></script> -->
-  </body>
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+<script src="./selection/food_choices.js"></script>
+<script src="./selection/selection.js"></script>
+<script src="./selection/generator.js"></script>
+</body>
+
 </html>
