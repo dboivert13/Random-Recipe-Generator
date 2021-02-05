@@ -76,6 +76,7 @@ $(document).ready(function () {
       url: url,
       method: "GET",
     }).then(function (res) {
+      $("#generate").empty();
       var hit = res.hits[0];
       console.log(hit);
       var container = $("<div>").attr("class", "grid-container");
