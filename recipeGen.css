@@ -29,12 +29,14 @@ header {
   display: inline-block;
   margin: 2%;
   align-content: center;
-  overflow: scroll;
+  /* overflow: scroll; */
   text-align: center;
 }
 
 .scroll {
-  overflow: scroll;
+  overflow-y: scroll;
+  height: 300px;
+  width: 300px;
 }
 
 #recipe {
@@ -62,15 +64,19 @@ header {
   /* float: left;
   margin-left: 20%; */
   overflow: scroll;
-  /* height: 30%;
-  align-items: center; */
+  height: 500px; 
+  align-items: center; 
 }
 
 .wrap {
   white-space: pre-wrap;
-  align-items: center;
-  /* overflow: break-word; */
+  background-color: darkgrey;
+  border: 1px solid darkgreen;
+  word-break: break-word;
+  margin: 5px;
+  text-align: center;
 }
+
 
 @media screen and (max-width: 500px) {
   #store {width: 300px; float:left};
