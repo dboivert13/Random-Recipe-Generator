@@ -132,6 +132,7 @@ $(document).ready(function () {
         var list_text = $("<p>").text(array[0]);
         var list_img = $("<img>").attr("src", array[1]);
         var list_url = $("<a>").attr("href", array[2]);
+        list_url.attr("class", "card-divider wrap");
         list_url.text(array[2]);
 
         list_div.append(list_text, list_img, list_url);
