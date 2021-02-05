@@ -124,13 +124,9 @@ $(document).ready(function () {
   render_save_list();
   function render_save_list() {
     for (var i in localStorage) {
-      if (
-        localStorage.hasOwnProperty(i) &&
-        localStorage.key(i) != "home-address"
-      ) {
+      if (localStorage.hasOwnProperty(i) && i != "home-address") {
         var array = localStorage.getItem(i).split(",");
         var list = $("<li>");
-
         var list_div = $("<div>");
         var list_text = $("<p>").text(array[0]);
         var list_img = $("<img>").attr("src", array[1]);
