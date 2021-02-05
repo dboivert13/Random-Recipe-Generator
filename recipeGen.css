@@ -32,7 +32,7 @@ header {
   display: inline-block;
   margin: 2%;
   align-content: center;
-  /* overflow: scroll; */
+  overflow: scroll;
   text-align: center;
 }
 
