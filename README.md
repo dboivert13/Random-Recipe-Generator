@@ -17,3 +17,6 @@ The Saved Recipe tab provide the user with the previous saved recipe.
 
 - This also provide the user with an option to enter an address which then can generate 5 nearest market.
 - The user also have an option to save the address inputed as home address.
+
+## Deck Link  
+  https://docs.google.com/presentation/d/1lt_JBxhqQfENg_i4xXGbrn9SP9xFKIHgSmHEbfcI6iA/edit#slide=id.p
