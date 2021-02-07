@@ -2,6 +2,8 @@
 
 An application that allows the user to think of a meal from a bank of protein, carbs and veggie options - from there they will be provided a possible meal and the nutritional facts for said meal.
 
+Check it out [here!](https://dboivert13.github.io/Random-Recipe-Generator/)
+
 User is presented with 3 categories that they can filter to look for the recipe they want given the ingredients
 
 - Protein (Beef, Chicken, Port, etc.)
